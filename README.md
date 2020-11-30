@@ -1,3 +1,3 @@
 # javascripting
 
-This folder contains small javascripting codes for practice purposes. 
+This folder contains small JavaScript codes for practice purposes. 
