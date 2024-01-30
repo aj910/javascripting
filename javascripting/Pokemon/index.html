@@ -22,9 +22,9 @@
       />
       <h1 class="title">Pokémon Search App</h1>
       <div class="container">
-        <form role="search" id="search-form">
+        <form id="search-form">
           <label for="search-input">Search for Pokémon Name or ID:</label>
-          <input type="text" name="pokemon" id="search-input" required />
+          <input type="text" id="search-input" required>
           <button id="search-button">Search</button>
         </form>
         <div class="output">
@@ -37,7 +37,7 @@
               <span id="weight"></span>
               <span id="height"></span>
             </div>
-            <div id="sprite-container" class="sprite-container"></div>
+            <div id="sprite-container"></div>
             <div id="types"></div>
           </div>
           <div class="bottom-container">
@@ -74,7 +74,7 @@
           </div>
         </div>
       </div>
-      <script src="./script.js"></script>
+      <script src="./pokemon.js"></script>
     </main>
   </body>
 </html>
