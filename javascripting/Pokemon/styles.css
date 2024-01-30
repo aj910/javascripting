@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --main-bg-color: #2a2a40;
+    --black: #000;
+    --dark-grey: #d0d0d5;
+    --dark-purple: #7f21ab;
+    --medium-grey: #dfdfe2;
+    --light-grey: #f5f6f7;
+    --peach: #f28373;
+    --salmon-color: #f0aea9;
+    --light-blue: #8bd9f6;
+    --light-orange: #f8b172;
+    --light-green: #93cb5b;
+    --golden-yellow: #f1ba33;
+    --gold: #f9aa23;
+    --green: #6bca6b;
+  }
+  
+  body {
+    background-color: var(--main-bg-color);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  nav {
+    background-color: var(--dark-navy);
+    padding: 10px 0;
+  }
+  
+  .fcc-logo {
+    width: 210px;
+    display: block;
+    margin: auto;
+  }
+  
+  .title {
+    margin: 25px 0;
+    text-align: center;
+    color: var(--light-grey);
+  }
+  
+   #search-form {
+    flex-wrap: wrap;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 8px 8px 0 0;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+  }
+
+  #search-input {
+    height: 40px;
+    padding-left: 10px;
+    width: 200px;
+  }
+  #search-button {
+    padding: 14px 0;
+    width: 80px;
+    border-radius: 20px;
+   
+    background-color: #7f21ab;
+    color: #f5f6f7;
+    border: none;
+  }
+  table {
+    width: 100%;
+    color: var(--light-grey);
+    margin: auto;
+   border-spacing: 0;
+    border-collapse: collapse;
+    background-color: var(--dark-purple) 
+  }
+  
+ 
+  
+  th {
+    border-bottom: 2px solid var(--dark-grey);
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+  }
+  
+  td:not(:first-child) {
+    text-align: center;
+  }
+  
+  td {
+    border-bottom: 1px solid var(--dark-grey);
+    padding: 20px 0;
+  }
+  
+  
+  
+ .container {
+       margin: 25px 0;
+    background-color: #f5f6f7;
+    border: 1px solid #f5f6f7;
+    border-radius: 15px;
+    box-shadow: 10px 10px 0px 0px rgba(223, 220, 220, 0.75);
+ }
+ .top-container {
+   display: flex;
+   margin-bottom: 10px;
+   padding: 10px;
+   background-color: #f1f0f7;
+ }
+ .sprite-container {
+   flex-grow: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+  @media (max-width: 750px) {
+    .table-wrapper {
+      padding: 0 15px;
+    }
+  
+    table {
+      width: 700px;
+    }
+  
+    th {
+      font-size: 1.2rem;
+    }
+  
+    .post-title {
+      font-size: 1.1rem;
+    }
+  }
