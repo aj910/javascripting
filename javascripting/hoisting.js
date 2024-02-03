@@ -1,6 +1,4 @@
 // case 1: function and variable is accessed after initialisation: 
-
-console.log(displayName)
 var x = 10;
 
 var displayName = () => {
@@ -8,6 +6,7 @@ var displayName = () => {
 }
 console.log(x);
 displayName();
+console.log(displayName)
 
 // calls the function with Anmol printed in the console
 
