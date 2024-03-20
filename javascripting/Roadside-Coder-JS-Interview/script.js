@@ -7,6 +7,7 @@ console.log(a); // 5
 
 
 //let scope
+// You cannot redeclare a blocked scope variable using let 
 {
     let b = 30;
 }
@@ -18,6 +19,7 @@ console.log(a); // 5
 }
 
 // const scope 
+// You cannot redeclare a blocked scope variable using const 
 
 {
     const x = 10;
