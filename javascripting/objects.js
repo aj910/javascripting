@@ -21,7 +21,6 @@ const superhero = [
 	
 	}];
 
-
 for (let i = 0; i < superhero.length; i++) {
 	console.log(superhero[i].type);
 	console.log(superhero[i].strength);
@@ -29,6 +28,18 @@ for (let i = 0; i < superhero.length; i++) {
 }
 
 console.log(superhero[2].color);
+
+// adding dynamic key-value pairs or properties in JS Objects
+
+const property = "firstName";
+const name = "Anmol";
+
+const user = {
+	[property]: name
+};
+
+console.log(user.firstName)
+
 
 
 
