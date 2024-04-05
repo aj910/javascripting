@@ -18,4 +18,4 @@ const obj = {
 	a: 31,
 };
 
-console.log(obj)
+console.log(obj); // the last value of the variable given will be replaced by their first values assigned to them

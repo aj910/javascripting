@@ -40,3 +40,22 @@ const reduceData = users.reduce((acc, curr) => {
 
 console.log(reduceData);
 
+
+const books = [
+    {
+        title: "The Great Gatsby",
+        author: "F. Scott Fitzgerald",
+        price: 12.99
+    },
+    {
+        title: "To Kill A Mockingbird",
+        author: "Harper Lee",
+        price: 9.99
+    },
+];
+
+const showBook = books.map((book) => {
+   return `${book.title}: ${book.price}`;
+});
+
+console.log(showBook);
