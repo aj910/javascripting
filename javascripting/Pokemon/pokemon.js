@@ -50,12 +50,12 @@ const displayPokemonData = ({ id, name, weight, height, stats, types, sprites })
   pokemonIdElement.textContent = id ? `#${id}` : 'N/A';
   weightElement.textContent = weight ? `Weight: ${weight}` : 'N/A';
   heightElement.textContent = height ? `Height: ${height}` : 'N/A';
-  hpElement.textContent = stats && stats[0] ? stats[0].base_stat : 'N/A';
-  attackElement.textContent = stats && stats[1] ? stats[1].base_stat : 'N/A';
-  defenseElement.textContent = stats && stats[2] ? stats[2].base_stat : 'N/A';
-  specialAttackElement.textContent = stats && stats[3] ? stats[3].base_stat : 'N/A';
-  specialDefenseElement.textContent = stats && stats[4] ? stats[4].base_stat : 'N/A';
-  speedElement.textContent = stats && stats[5] ? stats[5].base_stat : 'N/A';
+  hpElement.textContent = stats && stats.find(stat => stat.stat.name === 'hp') ? stats.find(stat => stat.stat.name === 'hp').base_stat : 'N/A';
+  attackElement.textContent = stats && stats.find(stat => stat.stat.name === 'attack') ? stats.find(stat => stat.stat.name === 'attack').base_stat : 'N/A';
+  defenseElement.textContent = stats && stats.find(stat => stat.stat.name === 'defense') ? stats.find(stat => stat.stat.name === 'defense').base_stat : 'N/A';
+  specialAttackElement.textContent = stats && stats.find(stat => stat.stat.name === 'special-attack') ? stats.find(stat => stat.stat.name === 'special-attack').base_stat : 'N/A';
+  specialDefenseElement.textContent = stats && stats.find(stat => stat.stat.name === 'special-defense') ? stats.find(stat => stat.stat.name === 'special-defense').base_stat : 'N/A';
+  speedElement.textContent = stats && stats.find(stat => stat.stat.name === 'speed') ? stats.find(stat => stat.stat.name === 'speed').base_stat : 'N/A';
 
   // Display types in the #types element
   typesElement.innerHTML = '';
@@ -63,7 +63,7 @@ const displayPokemonData = ({ id, name, weight, height, stats, types, sprites })
     const typeElement = document.createElement('div');
     typeElement.textContent = type.type.name.toUpperCase();
     typeElement.style.backgroundColor = "orange";
-    typeElement.style.borderRadius = "20px";
+    typeElement.style.borderRadius = "10px";
 
     typesElement.appendChild(typeElement);
   });
