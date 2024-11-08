@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   
   :root {
     --main-bg-color: #2a2a40;
@@ -22,7 +18,7 @@
   }
   
   body {
-    background-color: var(--main-bg-color);
+    background-color: var(--peach);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
@@ -40,7 +36,7 @@
   .title {
     margin: 25px 0;
     text-align: center;
-    color: var(--light-grey);
+    color: var(--black);
   }
   
    #search-form {
@@ -66,7 +62,7 @@
     width: 8%;
     border-radius: 20px;
     margin-left: 15px;
-    background-color: #7f21ab;
+    background-color: var(--dark-purple);
     color: #f5f6f7;
     border: none;
   }
@@ -74,12 +70,11 @@
     width: 100%;
     color: var(--light-grey);
     margin: auto;
-   border-spacing: 0;
+    border-spacing: 0;
     border-collapse: collapse;
-    background-color: var(--dark-purple) 
+    background-color: var(--dark-purple);
+    border-radius: 5px;
   }
-  
- 
   
   th {
     border-bottom: 2px solid var(--dark-grey);
@@ -95,25 +90,22 @@
     border-bottom: 1px solid var(--dark-grey);
     padding: 20px 0;
   }
+
+  .row-text {
+    padding-left: 10px;
+  }
   
-  
-  
- .container {
-    margin: 30px 0;
-    background-color: #f5f6f7;
-    border: 1px solid #f5f6f7;
-    border-radius: 15px;
-    box-shadow: 10px 10px 0px 0px rgba(223, 220, 220, 0.75);
- }
  .top-container {
    display: flex;
    margin-bottom: 10px;
-   padding: 10px;
-   background-color: #f1f0f7;
+   padding: 15px;
+   border-radius: 5px;
+   background-color: var(--salmon-color);
  }
  #sprite-container {
-   flex-grow: 2;
+   flex-grow: 3;
     display: flex;
     align-items: center;
     justify-content: center;
  }
+

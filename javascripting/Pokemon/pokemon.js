@@ -47,7 +47,7 @@ searchPokeForm.addEventListener('submit', (event) => {
 const displayPokemonData = ({ id, name, weight, height, stats, types, sprites }) => {
   // Display values in the specified elements
   pokemonNameElement.textContent = name ? name.toUpperCase() : 'N/A';
-  pokemonIdElement.textContent = id ? `#${id}` : 'N/A';
+  pokemonIdElement.textContent = id ? `ID: ${id}` : 'N/A';
   weightElement.textContent = weight ? `Weight: ${weight}` : 'N/A';
   heightElement.textContent = height ? `Height: ${height}` : 'N/A';
   hpElement.textContent = stats && stats.find(stat => stat.stat.name === 'hp') ? stats.find(stat => stat.stat.name === 'hp').base_stat : 'N/A';
@@ -64,7 +64,6 @@ const displayPokemonData = ({ id, name, weight, height, stats, types, sprites })
     typeElement.textContent = type.type.name.toUpperCase();
     typeElement.style.backgroundColor = "orange";
     typeElement.style.borderRadius = "10px";
-
     typesElement.appendChild(typeElement);
   });
 
